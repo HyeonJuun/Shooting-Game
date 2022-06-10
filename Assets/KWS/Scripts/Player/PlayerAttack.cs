@@ -25,10 +25,9 @@ public class PlayerAttack : MonoBehaviour
 
     void GetFireInput()
     {
-        if (Input.GetMouseButton(0) == false) return;
+        if (Input.GetMouseButtonDown(0) == false) return;
         if (now_bullet_cnt <= 0)
         {
-            Debug.Log("ÃÑ¾Ë ºÎÁ·");
             StartCoroutine(ReLoadBullet());
         }
 
@@ -37,8 +36,6 @@ public class PlayerAttack : MonoBehaviour
         bullet.Init(attack_power, gun_muzzle.position);
         bullet.Fire();
 
-       // max_bullet_cnt--;
-        //bullet.transform.rotation = Quaternion.Euler(new Vector3(0f, 90f, 0f));
     }
 
     IEnumerator ReLoadBullet()
