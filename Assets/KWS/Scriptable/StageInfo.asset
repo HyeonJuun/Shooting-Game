@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fff4a3e14f28a24f825546c58178f98, type: 3}
+  m_Name: StageInfo
+  m_EditorClassIdentifier: 
+  stage_info:
+  - enemy_prefab: {fileID: 1070533183943548448, guid: 239e4107e38d7fc458ce2becc39937f4, type: 3}
+    stage_num: 1
+    enemy_cnt: 3
+    create_speed: 1
+    enemy_hp: 25
+    enemy_move_speed: 5
+  - enemy_prefab: {fileID: 1070533183943548448, guid: 239e4107e38d7fc458ce2becc39937f4, type: 3}
+    stage_num: 2
+    enemy_cnt: 5
+    create_speed: 1
+    enemy_hp: 50
+    enemy_move_speed: 7
+  - enemy_prefab: {fileID: 1070533183943548448, guid: 239e4107e38d7fc458ce2becc39937f4, type: 3}
+    stage_num: 3
+    enemy_cnt: 8
+    create_speed: 0.7
+    enemy_hp: 75
+    enemy_move_speed: 10
+  - enemy_prefab: {fileID: 1070533183943548448, guid: 239e4107e38d7fc458ce2becc39937f4, type: 3}
+    stage_num: 4
+    enemy_cnt: 13
+    create_speed: 0.5
+    enemy_hp: 75
+    enemy_move_speed: 12
+  - enemy_prefab: {fileID: 1070533183943548448, guid: 239e4107e38d7fc458ce2becc39937f4, type: 3}
+    stage_num: 5
+    enemy_cnt: 17
+    create_speed: 0.25
+    enemy_hp: 100
+    enemy_move_speed: 14
