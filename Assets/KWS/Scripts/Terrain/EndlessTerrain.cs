@@ -70,8 +70,8 @@ public class EndlessTerrain : MonoBehaviour
 
             position_v3 = new Vector3(position.x, 0, position.y);
 
-            if (mesh_object == null)
-                return;
+            //if (mesh_object == null)
+            //    return;
             mesh_object = ObjectPooling.instance.GetPlane();
             mesh_object.transform.position = position_v3;
 
