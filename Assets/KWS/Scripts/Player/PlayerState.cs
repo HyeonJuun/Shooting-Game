@@ -52,7 +52,7 @@ public class PlayerState : MonoBehaviour
     private void CheckDeath()
     {
         if (hp > 0) return;
-        //gameover_pannel.SetActive(true);
+        gameover_pannel.SetActive(true);
         Debug.Log("Death");
 
     }

@@ -40,7 +40,8 @@ public class ObjectPooling : MonoBehaviour
         {
             obj = GameObject.CreatePrimitive(PrimitiveType.Plane);
         }
-        obj.SetActive(true);
+        if(obj != null)
+            obj.SetActive(true);
 
         return obj;
     }
