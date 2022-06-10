@@ -11,6 +11,7 @@ public class EventManager : MonoBehaviour
     }
     IEnumerator L()
     {
+        Destroy(ObjectPooling.instance.gameObject);
         yield return SceneManager.LoadSceneAsync("SampleScene");
     }
 }
