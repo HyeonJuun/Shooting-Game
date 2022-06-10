@@ -43,3 +43,9 @@ MonoBehaviour:
     create_speed: 0.25
     enemy_hp: 100
     enemy_move_speed: 14
+  - enemy_prefab: {fileID: 1070533183943548448, guid: 239e4107e38d7fc458ce2becc39937f4, type: 3}
+    stage_num: 6
+    enemy_cnt: 99999
+    create_speed: 1
+    enemy_hp: 100
+    enemy_move_speed: 14

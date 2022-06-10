@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class PlayerState : MonoBehaviour
 {
     private GameObject m_goHpBar;
+
+    private bool isDead = false;
     [SerializeField]
-    private GameObject gameover_pannel;
+    private GameManager gamemanager;
 
     [SerializeField]
     private float hp;
@@ -52,10 +54,11 @@ public class PlayerState : MonoBehaviour
     private void CheckDeath()
     {
         if (hp > 0) return;
-        gameover_pannel.SetActive(true);
+        gamemanager.PlayerDeadState();
+        
         Debug.Log("Death");
-
     }
+
 
     IEnumerator EffectDamaged()
     {

@@ -7,6 +7,10 @@ public class EventManager : MonoBehaviour
 {
     public void ReplayGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        StartCoroutine(L());
+    }
+    IEnumerator L()
+    {
+        yield return SceneManager.LoadSceneAsync("SampleScene");
     }
 }

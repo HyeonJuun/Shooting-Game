@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     private GameObject player;
     private Rigidbody rigid;
     private int enemy_speed;
+    private int stage;
 
     public delegate void Report_Death_Callback();
     public Report_Death_Callback report_death_callback;
@@ -50,13 +51,14 @@ public class Enemy : MonoBehaviour
         DownHp(damage);
     }
 
-    public void Init(Report_Death_Callback report_death_callback, Vector3 spwan_pos, int hp, int speed)
+    public void Init(Report_Death_Callback report_death_callback, Vector3 spwan_pos, int hp, int speed, int stage)
     {
         this.hp = hp;
         this.report_death_callback = report_death_callback;
         //nav_mesh_agent.speed = speed;
         enemy_speed = speed;
         transform.position = spwan_pos;
+        this.stage = stage;
     }
     void DownHp(float damage)
     {
@@ -73,6 +75,7 @@ public class Enemy : MonoBehaviour
 
     void Death()
     {
+        GameManager.score += stage * 100;
         report_death_callback();
         Destroy(this.gameObject);
     }

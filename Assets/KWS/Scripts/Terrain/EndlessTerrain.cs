@@ -73,6 +73,8 @@ public class EndlessTerrain : MonoBehaviour
             //if (mesh_object == null)
             //    return;
             mesh_object = ObjectPooling.instance.GetPlane();
+            if (mesh_object == null)
+                return;
             mesh_object.transform.position = position_v3;
 
             local_scale = Vector3.one * size / 10f;
