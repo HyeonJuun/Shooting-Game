@@ -18,34 +18,34 @@ MonoBehaviour:
     enemy_cnt: 3
     create_speed: 1
     enemy_hp: 25
-    enemy_move_speed: 5
+    enemy_move_speed: 15
   - enemy_prefab: {fileID: 1070533183943548448, guid: 239e4107e38d7fc458ce2becc39937f4, type: 3}
     stage_num: 2
     enemy_cnt: 5
     create_speed: 1
     enemy_hp: 50
-    enemy_move_speed: 7
+    enemy_move_speed: 20
   - enemy_prefab: {fileID: 1070533183943548448, guid: 239e4107e38d7fc458ce2becc39937f4, type: 3}
     stage_num: 3
     enemy_cnt: 8
     create_speed: 0.7
     enemy_hp: 75
-    enemy_move_speed: 10
+    enemy_move_speed: 25
   - enemy_prefab: {fileID: 1070533183943548448, guid: 239e4107e38d7fc458ce2becc39937f4, type: 3}
     stage_num: 4
     enemy_cnt: 13
     create_speed: 0.5
     enemy_hp: 75
-    enemy_move_speed: 12
+    enemy_move_speed: 30
   - enemy_prefab: {fileID: 1070533183943548448, guid: 239e4107e38d7fc458ce2becc39937f4, type: 3}
     stage_num: 5
     enemy_cnt: 17
     create_speed: 0.25
     enemy_hp: 100
-    enemy_move_speed: 14
+    enemy_move_speed: 30
   - enemy_prefab: {fileID: 1070533183943548448, guid: 239e4107e38d7fc458ce2becc39937f4, type: 3}
     stage_num: 6
     enemy_cnt: 99999
     create_speed: 1
     enemy_hp: 100
-    enemy_move_speed: 14
+    enemy_move_speed: 35

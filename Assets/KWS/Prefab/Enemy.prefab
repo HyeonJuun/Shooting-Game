@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack_power: 50
+  enemy_speed: 10
   weapon: {fileID: 0}
 --- !u!195 &2759684435382020596
 NavMeshAgent:

@@ -27,11 +27,11 @@ public class FollowCamera : MonoBehaviour
 
         Vector3 origin_pos = transform.position;
 
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < 3; i++)
         {
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.025f);
 
-            Vector3 temp = transform.position + Random.insideUnitSphere * 1f;
+            Vector3 temp = transform.position + Random.insideUnitSphere * 2f;
             temp.y = origin_pos.y;
 
             transform.position = temp;

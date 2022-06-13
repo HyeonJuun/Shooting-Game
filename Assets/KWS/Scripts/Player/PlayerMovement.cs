@@ -14,8 +14,10 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
     private Rigidbody rigid_body;
+    private Animator player_ani;
     private void Start()
     {
+        player_ani = GetComponent<Animator>();
         rigid_body = GetComponent<Rigidbody>();
     }
 
@@ -40,13 +42,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (movement_vector.magnitude == 0)
         {
+            player_ani.SetBool("IsRun", false);
             rigid_body.velocity = Vector3.zero;
             return;
         }
 
         //transform.Translate(movement_vector.normalized * Time.deltaTime * move_power, Space.World);
         //rigid_body.AddForce(movement_vector.normalized * move_power, ForceMode.Force);
+
         rigid_body.velocity = movement_vector * move_power * Time.deltaTime;
+        player_ani.SetBool("IsRun", true);
     }
 
     void Rotate()
